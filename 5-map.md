@@ -56,7 +56,7 @@ async function haeSaa(kaupunki) {
 
 ---
 
-## Useita paikkoja samassa kartassa
+# Extra: Useita paikkoja samassa kartassa
 
 ```html
 <div id="isoKartta" style="height: 600px; width: 600px;"></div>
