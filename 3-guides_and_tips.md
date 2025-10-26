@@ -46,6 +46,12 @@ if (!kaupunki.trim()) {
 }
 ```
 
-## Tee 5 päivän ennuste käyttämällä endpointtia:
+## Tee 5 päivän ennuste
+
+käyttämällä endpointtia:
 
 https://api.openweathermap.org/data/2.5/forecast?q=Kaupunki&appid=APIKEY&units=metric
+
+API-docs:
+
+https://openweathermap.org/forecast5
