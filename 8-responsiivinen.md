@@ -52,6 +52,8 @@ Voit vaihtaa tyylejä suoraan näytön koon mukaan:
 
 Ne mukautuvat automaattisesti. Alla kaksi esimerkkiä.
 
+**Flexbox**
+
 ```css
 .wrapper {
   display: flex;
@@ -59,30 +61,41 @@ Ne mukautuvat automaattisesti. Alla kaksi esimerkkiä.
 }
 ```
 
-```html
-<div class="grid-container">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-</div>
+**Grid**
 
-<style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-  }
-  .item {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-  }
-</style>
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+      }
+      .item {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>
 ```
 
 Selitys:
-repeat(auto-fit, minmax(150px, 1fr)) tekee niin, että ruudukko luo niin monta saraketta kuin mahtuu, ja sarakkeet venyvät aina vähintään 150px:iin ja enintään käytettävissä olevan tilan mukaan (1fr).
+repeat(auto-fit, minmax(300px, 1fr)) tekee niin, että ruudukko luo niin monta saraketta kuin mahtuu, ja sarakkeet venyvät aina vähintään 300px:iin ja enintään käytettävissä olevan tilan mukaan (1fr).
 
 ---
 
@@ -99,4 +112,4 @@ img {
 
 ## Testaa eri kokoisilla näytöillä ja devtoolsilla
 
-Selaimen kehittäjätyökaluista voi vaihtaa näyttökokoa.
+Selaimen kehittäjätyökaluilla voi muuttaa näyttökokoa.
