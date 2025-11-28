@@ -30,4 +30,4 @@ Mene sivulle `https://favicon.io/` ja luo oma flavicon. Lataa tiedosto(t) oman p
 
 Jos favicon ei näy heti selaimessa, se johtuu yleensä välimuistista. Päivitä sivu kovalla päivityksellä
 
-`Ctrl + F5` tai `Cmd+Shift+R` (Windows/Linux).
+`Ctrl + F5` tai `Ctrl+Shift+R` (Windows/Linux).
